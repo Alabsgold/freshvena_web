@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 147 64% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 147 64% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 147 64% 15%;
+
+    --primary: 147 64% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 48 73% 59%;
+    --secondary-foreground: 147 64% 15%;
+
+    --muted: 147 20% 96%;
+    --muted-foreground: 147 15% 45%;
+
+    --accent: 48 73% 59%;
+    --accent-foreground: 147 64% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 147 25% 88%;
+    --input: 147 25% 88%;
+    --ring: 147 64% 15%;
+
+    --radius: 1.5rem;
+
+    /* Custom brand colors */
+    --brand-green: 147 64% 15%;
+    --brand-gold: 48 73% 59%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 147 25% 88%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(147 64% 15%) 0%, hsl(147 50% 25%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(48 73% 59%) 0%, hsl(45 80% 65%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+
+    /* Shadows */
+    --shadow-glass: 0 8px 32px 0 rgba(15, 61, 32, 0.1);
+    --shadow-hover: 0 12px 48px 0 rgba(15, 61, 32, 0.15);
+    --shadow-glow: 0 0 40px rgba(232, 197, 71, 0.3);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 147 80% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 147 60% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 147 60% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 48 73% 59%;
+    --primary-foreground: 147 64% 15%;
+
+    --secondary: 147 45% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 147 45% 20%;
+    --muted-foreground: 147 20% 70%;
+
+    --accent: 48 73% 59%;
+    --accent-foreground: 147 64% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 147 45% 20%;
+    --input: 147 45% 20%;
+    --ring: 48 73% 59%;
+
+    /* Dark mode custom colors */
+    --brand-green: 147 64% 35%;
+    --brand-gold: 48 73% 59%;
+    --glass-bg: 147 60% 12%;
+    --glass-border: 147 45% 20%;
+
+    /* Dark gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(147 80% 8%) 0%, hsl(147 60% 15%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(48 73% 59%) 0%, hsl(45 80% 65%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(15, 61, 32, 0.8) 0%, rgba(15, 61, 32, 0.6) 100%);
+
+    /* Dark shadows */
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 12px 48px 0 rgba(232, 197, 71, 0.2);
+    --shadow-glow: 0 0 40px rgba(232, 197, 71, 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .gradient-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-gold {
+    box-shadow: var(--shadow-glow);
+  }
+}
