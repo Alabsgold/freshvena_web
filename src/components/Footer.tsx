@@ -77,12 +77,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Popular Products</h4>
             <ul className="space-y-2 text-sm">
-              <li className="opacity-90">Garri (Ijebu & White)</li>
+              <li className="opacity-90">Cassava Flour</li>
               <li className="opacity-90">Yam Flour</li>
               <li className="opacity-90">Plantain Flour</li>
               <li className="opacity-90">Palm Oil</li>
               <li className="opacity-90">Dried Fish & Crayfish</li>
-              <li className="opacity-90">Suya Spice Mix</li>
+              <li className="opacity-90">Groundnut</li>
             </ul>
           </div>
 
