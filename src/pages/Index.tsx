@@ -4,34 +4,38 @@ import { ArrowRight, ShoppingBag, Globe, Award, Shield, CheckCircle, Star } from
 import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/ProductCard";
 import { Card, CardContent } from "@/components/ui/card";
+import plantainFlour from "../prod_assets/plantain flour.jpg";
+import yamFlour from "../prod_assets/Yam flour.jpg";
+import PalmOil from "../prod_assets/Palm oil.jpg";
+import Crayfish from "../prod_assets/Cray fish.jpg";
 
 const Index = () => {
   const featuredProducts = [
     {
-      name: "Premium Ijebu Garri",
-      description: "Fine-grained, pure white garri processed with export-standard hygiene",
-      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600",
+      name: "Plantain Flour",
+      description: "Premium quality plantain flour for authentic Nigerian meals",
+      image: plantainFlour,
       packagingSize: "1kg, 5kg, 25kg bags",
       benefits: ["100% Pure & Natural", "No additives", "Export-ready packaging"],
     },
     {
       name: "Yam Flour (Elubo)",
       description: "Premium quality yam flour for authentic Nigerian meals",
-      image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600",
+      image: yamFlour,
       packagingSize: "1kg, 2kg, 5kg",
       benefits: ["Hygienically processed", "Smooth texture", "Long shelf life"],
     },
     {
-      name: "Pure Red Palm Oil",
+      name: "Palm Oil",
       description: "Naturally extracted red palm oil, rich in vitamins",
-      image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600",
+      image: PalmOil,
       packagingSize: "1L, 5L, 25L containers",
       benefits: ["Rich in Vitamin A", "100% Natural", "Premium quality"],
     },
     {
-      name: "Dried Crayfish",
+      name: "Crayfish",
       description: "Premium dried crayfish for authentic Nigerian flavoring",
-      image: "https://images.unsplash.com/photo-1535473895227-bdecb20fb157?w=600",
+      image: Crayfish,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Sun-dried", "Rich flavor", "High protein"],
     },
