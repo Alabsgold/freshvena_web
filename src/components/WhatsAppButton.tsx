@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const WhatsAppButton = () => {
   const handleClick = () => {
-    window.open("https://wa.me/", "_blank");
+    window.open("https://wa.me/2349023798724", "_blank");
   };
 
   return (

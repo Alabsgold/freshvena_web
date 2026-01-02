@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   const handleWhatsAppOrder = () => {
-    window.open("https://wa.me/", "_blank");
+    window.open("https://wa.me/2349023798724", "_blank");
   };
 
   return (
@@ -66,7 +66,7 @@ const Contact = () => {
                     <Phone className="h-7 w-7 text-brand-gold" />
                   </div>
                   <h3 className="font-bold text-lg">Call Us</h3>
-                  <p className="text-muted-foreground">+234 XXX XXX XXXX</p>
+                  <p className="text-muted-foreground">+234 902 379 8724</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -83,7 +83,7 @@ const Contact = () => {
                     <Mail className="h-7 w-7 text-brand-gold" />
                   </div>
                   <h3 className="font-bold text-lg">Email Us</h3>
-                  <p className="text-muted-foreground">info@freshvenafoods.com</p>
+                  <p className="text-muted-foreground">freshlyfoods25@gmail.com</p>
                 </CardContent>
               </Card>
             </motion.div>

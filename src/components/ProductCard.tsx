@@ -15,7 +15,7 @@ interface ProductCardProps {
 const ProductCard = ({ name, description, image, packagingSize, benefits, index = 0 }: ProductCardProps) => {
   const handleWhatsAppOrder = () => {
     const message = `Hi, I'm interested in ordering ${name}`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/2349023798724?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (

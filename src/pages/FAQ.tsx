@@ -14,7 +14,7 @@ const FAQ = () => {
       questions: [
         {
           q: "How do I place an order?",
-          a: "You can place orders through our website contact form, via WhatsApp, or by emailing us directly at info@freshvenafoods.com. Simply specify the products and quantities you need.",
+          a: "You can place orders through our website contact form, via WhatsApp, or by emailing us directly at freshlyfoods25@gmail.com. Simply specify the products and quantities you need.",
         },
         {
           q: "What payment methods do you accept?",
@@ -192,7 +192,7 @@ const FAQ = () => {
                 Contact Us
               </a>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/2349023798724"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 bg-[#25D366] text-white rounded-full font-semibold hover:opacity-90 transition-opacity"
