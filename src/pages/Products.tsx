@@ -4,6 +4,17 @@ import ProductCard from "@/components/ProductCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Download } from "lucide-react";
+import plantainFlour from "../prod_assets/plantain flour.jpg";
+import yamFlour from "../prod_assets/Yam flour.jpg";
+import cassavaFlour from "../prod_assets/Cassava flour.jpg";
+import palmOil from "../prod_assets/Palm oil.jpg";
+import driedFish from "../prod_assets/dried fish.jpg";
+import crayFish from "../prod_assets/Cray fish.jpg";
+import groundnutOil from "../prod_assets/groundnut oil.jpg";
+import goatMeat from "../prod_assets/Goat meat.jpg";
+import groundnut from "../prod_assets/Groundnut.jpg";
+import egusi from "../prod_assets/egusi.jpg";
+import ogbono from "../prod_assets/Ogbono.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,77 +23,77 @@ const Products = () => {
     {
       name: "Platain Flour",
       description: "Premium fine-processed Plantain flour, hygienically processed for export",
-      image: "https://drive.google.com/file/d/1l7XmAuJ3y9CTzl8H4BPK6jfQY7-MCFnf/view?usp=sharing",
+      image: plantainFlour,
       packagingSize: "1kg, 5kg, 25kg bags",
       benefits: ["100% Pure white", "No additives", "Fine texture", "Long shelf life"],
     },
     {
       name: "Yam Flour (Elubo)",
       description: "Premium yam flour for smooth, delicious pounded yam",
-      image: "https://drive.google.com/file/d/1IXkiO5KvJ3EshIY4_5F3PD40oH2pHL8I/view?usp=sharing",
+      image: yamFlour,
       packagingSize: "1kg, 2kg, 5kg",
       benefits: ["Smooth texture", "Easy to prepare", "Authentic taste"],
     },
     {
       name: "Cassava Flour",
       description: "Unripe cassava flour, rich in nutrients",
-      image: "https://drive.google.com/file/d/1aEYsufsArqCNAwzbkMna8ByCoyA9lpaG/view?usp=sharing",
+      image: cassavaFlour,
       packagingSize: "500g, 1kg, 2kg",
       benefits: ["High fiber", "Gluten-free", "Low GI"],
     },
     {
       name: "Palm Oil",
       description: "Naturally extracted palm oil, rich in vitamins A & E",
-      image: "https://drive.google.com/file/d/1r4WhfVD-fcAekZV51_79_JNm_qDv2HuN/view?usp=sharing",
+      image: palmOil,
       packagingSize: "1L, 5L, 25L containers",
       benefits: ["Rich in Vitamin A", "100% Natural", "No preservatives"],
     },
     {
       name: "Dried Fish",
       description: "Premium dried fish for authentic Nigerian soups",
-      image: "https://drive.google.com/file/d/1o76rns2CyC_gzqKCBVEupa6vrVlKUDHg/view?usp=sharing",
+      image: driedFish,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Sun-dried", "High protein", "Rich flavor"],
     },
     {
       name: "Dried Crayfish",
       description: "Ground and whole crayfish for seasoning",
-      image: "https://drive.google.com/file/d/10Dl8MuJX_kKwtef1FkaeuBRbiN2JWPC_/view?usp=sharing",
+      image: crayFish,
       packagingSize: "100g, 250g, 500g, 1kg",
       benefits: ["Premium quality", "Rich umami", "Finely ground"],
     },
     {
       name: "Groundnut Oil",
       description: "Premium groundnut oil, hygienically processed for export",
-      image: "https://drive.google.com/file/d/1apDs-VgTnDQ2bHmiqVILAcqkAxwK6lxi/view?usp=sharing",
+      image: groundnutOil,
       packagingSize: "100g, 250g, 500g",
       benefits: ["Premium Quality", "Rich in Vitamin E", "Ready to use"],
     },
     {
       name: "Goat Meat",
       description: "Premium goat meat, hygienically processed for export",
-      image: "https://drive.google.com/file/d/1rOang8rRnUkhKfFFG3r58dfdvQnHXDlp/view?usp=sharing",
+      image: goatMeat,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Fresh", "Hygienically processed", "Export-ready"],
     },
     {
       name: "Groundnuts (fresh)",
       description: "Premium groundnuts, hygienically processed for export",
-      image: "https://drive.google.com/file/d/1E_0ubEmQGqjRK4n1ciqhFg6l8UVmVSKz/view?usp=sharing",
+      image: groundnut,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Protein-rich", "Hygienically processed", "Export-ready"],
     },
     {
       name: "Egusi (Melon Seeds)",
       description: "Premium shelled egusi for Nigerian soups",
-      image: "https://drive.google.com/file/d/1BqQwmJYlv-ihxD9Bn_T-aJZJKBEXh2_P/view?usp=sharing",
+      image: egusi,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Hulled & cleaned", "High protein", "Rich in nutrients"],
     },
     {
       name: "Ogbono (Pumpkin Seeds)",
       description: "African pumpkin seeds for thick, delicious soup",
-      image: "https://drive.google.com/file/d/1C9gWmjAvBNtbjGvFos6rDh5J-Vx6PtGj/view?usp=sharing",
+      image: ogbono,
       packagingSize: "200g, 500g, 1kg",
       benefits: ["Finely ground", "Rich flavor", "Natural thickener"],
     },
