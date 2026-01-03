@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import founderImage from "../assets/Founder.jpg";
 
 const Founder = () => {
   return (
@@ -32,14 +33,20 @@ const Founder = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="aspect-square rounded-3xl bg-gradient-to-br from-brand-gold/20 to-primary/20 flex items-center justify-center glass-card">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-brand-gold/10 flex items-center justify-center">
-                      <span className="text-6xl">👤</span>
+                <div className="relative">
+                  <div className="aspect-[4/5] rounded-3xl overflow-hidden glass-card shadow-2xl border border-white/20 relative group">
+                    <div className="absolute inset-0 bg-brand-gold/10 mix-blend-overlay z-10" />
+                    <img
+                      src={founderImage}
+                      alt="Freshvena Foods Founder"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-20" />
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white z-30 transform translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
+                      <h3 className="text-2xl font-bold mb-1">Mrs Oyebola Alabi</h3>
+                      <p className="text-white/90 font-medium">CEO & Founder</p>
+                      <p className="text-sm text-white/70 mt-1">Freshvena Foods Limited</p>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Founder Name</h3>
-                    <p className="text-muted-foreground">CEO & Founder</p>
-                    <p className="text-sm text-muted-foreground mt-2">Freshvena Foods Limited</p>
                   </div>
                 </div>
               </motion.div>
