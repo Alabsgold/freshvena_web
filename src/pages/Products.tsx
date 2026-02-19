@@ -13,7 +13,7 @@ import groundnut from "../prod_assets/Groundnut.jpg";
 import egusi from "../prod_assets/egusi.jpg";
 import ogbono from "../prod_assets/Ogbono.jpg";
 import prawn from "../prod_assets/prawn.jpg";
-import kilishi from "../prod_asstes/kilishi.jpg";
+import kilishi from "../prod_assets/kilishi.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
