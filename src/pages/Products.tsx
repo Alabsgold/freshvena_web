@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Search, Download } from "lucide-react";
 import plantainFlour from "../prod_assets/plantain flour.jpg";
 import palmOil from "../prod_assets/Palm oil.jpg";
-import driedFish from "../prod_assets/dried fish.jpg";
 import crayFish from "../prod_assets/Cray fish.jpg";
-import goatMeat from "../prod_assets/Goat meat.jpg";
 import groundnut from "../prod_assets/Groundnut.jpg";
 import egusi from "../prod_assets/egusi.jpg";
-import ogbono from "../prod_assets/Ogbono.jpg";
 import prawn from "../prod_assets/prawn.jpg";
 import kilishi from "../prod_assets/kilishi.jpg";
+import driedFish from "../prod_assets/dried fish.jpg";
+import goatMeat from "../prod_assets/Goat meat.jpg";
+import ogbono from "../prod_assets/Ogbono.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,25 +34,11 @@ const Products = () => {
       benefits: ["Rich in Vitamin A", "100% Natural", "No preservatives"],
     },
     {
-      name: "Dried Fish",
-      description: "Premium dried fish for authentic Nigerian soups",
-      image: driedFish,
-      packagingSize: "250g, 500g, 1kg",
-      benefits: ["Sun-dried", "High protein", "Rich flavor"],
-    },
-    {
       name: "Crayfish",
       description: "Premium Fine, Hygenically packaged crayfish for export",
       image: crayFish,
       packagingSize: "100g, 250g, 500g, 1kg",
       benefits: ["Premium quality", "Rich umami", "Finely ground"],
-    },
-    {
-      name: "Goat Meat",
-      description: "Premium goat meat, hygienically processed for export",
-      image: goatMeat,
-      packagingSize: "250g, 500g, 1kg",
-      benefits: ["Fresh", "Hygienically processed", "Export-ready"],
     },
     {
       name: "Groundnuts (fresh)",
@@ -69,13 +55,6 @@ const Products = () => {
       benefits: ["Hulled & cleaned", "High protein", "Rich in nutrients"],
     },
     {
-      name: "Ogbono (Pumpkin Seeds)",
-      description: "African pumpkin seeds for thick, delicious soup",
-      image: ogbono,
-      packagingSize: "200g, 500g, 1kg",
-      benefits: ["Finely ground", "Rich flavor", "Natural thickener"],
-    },
-    {
       name: "Prawn (Shrimps)",
       description: "Premium Prawn, hygienically processed for export",
       image: prawn,
@@ -88,6 +67,27 @@ const Products = () => {
       image: kilishi,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Fresh", "Hygienically processed", "Export-ready"],
+    },
+    {
+      name: "Dried Fish",
+      description: "Premium dried fish for authentic Nigerian soups",
+      image: driedFish,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Sun-dried", "High protein", "Rich flavor"],
+    },
+    {
+      name: "Goat Meat",
+      description: "Premium goat meat, hygienically processed for export",
+      image: goatMeat,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Fresh", "Hygienically processed", "Export-ready"],
+    },
+    {
+      name: "Ogbono (Pumpkin Seeds)",
+      description: "African pumpkin seeds for thick, delicious soup",
+      image: ogbono,
+      packagingSize: "200g, 500g, 1kg",
+      benefits: ["Finely ground", "Rich flavor", "Natural thickener"],
     },
   ];
 
