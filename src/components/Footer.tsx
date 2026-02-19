@@ -79,9 +79,9 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="opacity-90">Plantain Flour</li>
               <li className="opacity-90">Groundnut</li>
-              <li className="opacity-90">Egusi(Melon seed)</li>
-              <li className="opacity-90">Palm Oil</li>
+              <li className="opacity-90">Palm oil</li>
               <li className="opacity-90">Dried Fish & Crayfish</li>
+              <li className="opacity-90">Egusi(Melon seeds)</li>
               <li className="opacity-90">Prawn</li>
             </ul>
           </div>
