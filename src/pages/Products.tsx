@@ -14,11 +14,19 @@ import kilishi from "../prod_assets/kilishi.jpg";
 import driedFish from "../prod_assets/dried fish.jpg";
 import goatMeat from "../prod_assets/Goat meat.jpg";
 import ogbono from "../prod_assets/Ogbono.jpg";
+import cashew from "..prod_assets/cashew nut.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const products = [
+    {
+      name: "Cashew Nuts(Processed)",
+      description: "Premium cashewnuts, hygienically processed for export",
+      image: cashew,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Protein-rich", "Finely Packaged", "Hygienically processed", "Export-ready"],
+    },
     {
       name: "Platain Flour",
       description: "Premium fine-processed Plantain flour, hygienically processed for export",

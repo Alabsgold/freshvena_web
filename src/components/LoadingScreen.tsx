@@ -29,6 +29,7 @@ const LoadingScreen = () => {
           transition={{ delay: 0.3 }}
         >
           <h2 className="text-2xl font-bold gradient-text">Freshvena Foods</h2>
+          <p className="text-sm text-muted-foreground mt-2">@Oyebola Alabi</p>
           <p className="text-sm text-muted-foreground mt-2">Loading premium quality...</p>
         </motion.div>
         <div className="flex space-x-2 justify-center">
