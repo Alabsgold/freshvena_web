@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Download } from "lucide-react";
+import cashew from "..prod_assets/cash.jpg";
 import plantainFlour from "../prod_assets/plantain flour.jpg";
 import palmOil from "../prod_assets/Palm oil.jpg";
 import crayFish from "../prod_assets/Cray fish.jpg";
@@ -11,11 +12,10 @@ import groundnut from "../prod_assets/Groundnut.jpg";
 import egusi from "../prod_assets/egusi.jpg";
 import prawn from "../prod_assets/prawn.jpg";
 import kilishi from "../prod_assets/kilishi.jpg";
+import iru from "..prod_assets/iru.jpg";
 import driedFish from "../prod_assets/dried fish.jpg";
 import goatMeat from "../prod_assets/Goat meat.jpg";
 import ogbono from "../prod_assets/Ogbono.jpg";
-import cashew from "..prod_assets/cashew.jpg";
-import iru from "..prod_assets/iru.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
