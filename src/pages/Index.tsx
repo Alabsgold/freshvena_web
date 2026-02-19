@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/ProductCard";
 import { Card, CardContent } from "@/components/ui/card";
 import plantainFlour from "../prod_assets/plantain flour.jpg";
-import yamFlour from "../prod_assets/Yam flour.jpg";
+import Groundnut from "../prod_assets/Groundnut.jpg";
 import PalmOil from "../prod_assets/Palm oil.jpg";
 import Crayfish from "../prod_assets/Cray fish.jpg";
 
@@ -19,11 +19,11 @@ const Index = () => {
       benefits: ["100% Pure & Natural", "No additives", "Export-ready packaging"],
     },
     {
-      name: "Yam Flour (Elubo)",
-      description: "Premium quality yam flour for authentic Nigerian meals",
-      image: yamFlour,
-      packagingSize: "1kg, 2kg, 5kg",
-      benefits: ["Hygienically processed", "Smooth texture", "Long shelf life"],
+      name: "Groundnuts (fresh)",
+      description: "Premium groundnuts, hygienically processed for export",
+      image: Groundnut,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Protein-rich", "Hygienically processed", "Export-ready"],
     },
     {
       name: "Palm Oil",
