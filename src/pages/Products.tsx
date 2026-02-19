@@ -4,7 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Download } from "lucide-react";
-import cashew from "..prod_assets/cash.jpg";
+import nut from "..prod_assets/Nut.jpg";
 import plantainFlour from "../prod_assets/plantain flour.jpg";
 import palmOil from "../prod_assets/Palm oil.jpg";
 import crayFish from "../prod_assets/Cray fish.jpg";
@@ -24,7 +24,7 @@ const Products = () => {
     {
       name: "Cashew Nuts(Processed)",
       description: "Premium cashewnuts, hygienically processed for export",
-      image: cashew,
+      image: nut,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Protein-rich", "Finely Packaged", "Hygienically processed", "Export-ready"],
     },
