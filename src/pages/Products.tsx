@@ -5,16 +5,15 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Download } from "lucide-react";
 import plantainFlour from "../prod_assets/plantain flour.jpg";
-import yamFlour from "../prod_assets/Yam flour.jpg";
-import cassavaFlour from "../prod_assets/Cassava flour.jpg";
 import palmOil from "../prod_assets/Palm oil.jpg";
 import driedFish from "../prod_assets/dried fish.jpg";
 import crayFish from "../prod_assets/Cray fish.jpg";
-import groundnutOil from "../prod_assets/groundnut oil.jpg";
 import goatMeat from "../prod_assets/Goat meat.jpg";
 import groundnut from "../prod_assets/Groundnut.jpg";
 import egusi from "../prod_assets/egusi.jpg";
 import ogbono from "../prod_assets/Ogbono.jpg";
+import prawn from "../prod_assets/prawn.jpg";
+import kilishi from "../prod_asstes/kilishi.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,20 +25,6 @@ const Products = () => {
       image: plantainFlour,
       packagingSize: "1kg, 5kg, 25kg bags",
       benefits: ["100% Pure white", "No additives", "Fine texture", "Long shelf life"],
-    },
-    {
-      name: "Yam Flour (Elubo)",
-      description: "Premium yam flour for smooth, delicious pounded yam",
-      image: yamFlour,
-      packagingSize: "1kg, 2kg, 5kg",
-      benefits: ["Smooth texture", "Easy to prepare", "Authentic taste"],
-    },
-    {
-      name: "Cassava Flour",
-      description: "Unripe cassava flour, rich in nutrients",
-      image: cassavaFlour,
-      packagingSize: "500g, 1kg, 2kg",
-      benefits: ["High fiber", "Gluten-free", "Low GI"],
     },
     {
       name: "Palm Oil",
@@ -56,18 +41,11 @@ const Products = () => {
       benefits: ["Sun-dried", "High protein", "Rich flavor"],
     },
     {
-      name: "Dried Crayfish",
-      description: "Ground and whole crayfish for seasoning",
+      name: "Crayfish",
+      description: "Premium Fine, Hygenically packaged crayfish for export",
       image: crayFish,
       packagingSize: "100g, 250g, 500g, 1kg",
       benefits: ["Premium quality", "Rich umami", "Finely ground"],
-    },
-    {
-      name: "Groundnut Oil",
-      description: "Premium groundnut oil, hygienically processed for export",
-      image: groundnutOil,
-      packagingSize: "100g, 250g, 500g",
-      benefits: ["Premium Quality", "Rich in Vitamin E", "Ready to use"],
     },
     {
       name: "Goat Meat",
@@ -96,6 +74,20 @@ const Products = () => {
       image: ogbono,
       packagingSize: "200g, 500g, 1kg",
       benefits: ["Finely ground", "Rich flavor", "Natural thickener"],
+    },
+    {
+      name: "Prawn (Shrimps)",
+      description: "Premium Prawn, hygienically processed for export",
+      image: prawn,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Protein-rich", "Hygienically processed", "Export-ready"],
+    },
+    {
+      name: "Kilishi (Beef Jerkey)",
+      description: "African Beef Jerkey, premium packaged and hygienically processed for export",
+      image: goatMeat,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["Fresh", "Hygienically processed", "Export-ready"],
     },
   ];
 
