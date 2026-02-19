@@ -24,7 +24,7 @@ const Products = () => {
       description: "Premium fine-processed Plantain flour, hygienically processed for export",
       image: plantainFlour,
       packagingSize: "1kg, 5kg, 25kg bags",
-      benefits: ["100% Pure white", "No additives", "Fine texture", "Long shelf life"],
+      benefits: ["Glutten Free", "No additives", "Fine texture", "Long shelf life"],
     },
     {
       name: "Palm Oil",
@@ -85,7 +85,7 @@ const Products = () => {
     {
       name: "Kilishi (Beef Jerkey)",
       description: "African Beef Jerkey, premium packaged and hygienically processed for export",
-      image: goatMeat,
+      image: kilishi,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Fresh", "Hygienically processed", "Export-ready"],
     },
