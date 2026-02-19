@@ -14,7 +14,8 @@ import kilishi from "../prod_assets/kilishi.jpg";
 import driedFish from "../prod_assets/dried fish.jpg";
 import goatMeat from "../prod_assets/Goat meat.jpg";
 import ogbono from "../prod_assets/Ogbono.jpg";
-import cashew from "..prod_assets/cashew nut.jpg";
+import cashew from "..prod_assets/cashew.jpg";
+import iru from "..prod_assets/iru.jpg";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -75,6 +76,13 @@ const Products = () => {
       image: kilishi,
       packagingSize: "250g, 500g, 1kg",
       benefits: ["Fresh", "Hygienically processed", "Export-ready"],
+    },
+    {
+      name: "Iru/Locust Beans (Powdered)",
+      description: "Naturally grounded, richly and premium processed ",
+      image: iru,
+      packagingSize: "250g, 500g, 1kg",
+      benefits: ["100% Natural", "No preservatives", "Finely Grounded"],
     },
     {
       name: "Dried Fish",
